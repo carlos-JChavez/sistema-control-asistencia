@@ -1,11 +1,11 @@
 package com.ferreyros.asistencia.models;
 
-import java.time.LocalTime;
+import java.time.LocalDate;
 
 public class Attendance {
     private int idAttendance;
     private int idEmployee;
-    private LocalTime date;
+    private LocalDate date;
     private double totalHoursWorked;
     private double totalOvertimeHours;
     private String state;
@@ -27,11 +27,11 @@ public class Attendance {
         this.idEmployee = idEmployee;
     }
 
-    public LocalTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
